@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
+  "name": "w6",
+  "version": "1.0.0",
+  "main": "TestCase.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

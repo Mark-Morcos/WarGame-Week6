@@ -1,0 +1,60 @@
+Mocha and Chai unit testig 
+
+in cmd
+npm -version
+go tp my project 
+npm init
+npm install mocha
+npm install chai
+
+in the HTML file
+<head>
+<link rel="stylesheet" href="node_modules/mocha/mocha.css">
+</head>
+
+<body>
+<div id="mocha"><p><a href=".">IIndex</a></p></div>
+<div id="messages"></div>
+<dev id="fixtrues"></div>
+<script src=node_modules/mocha/mocha.js></script>
+<script src=node_modules/mocha/chai.js></script>
+<script src="index.js"></script>
+<script src=mocha.setup('bdd')></script>
+<script src="index_test.js"></script>
+<script src=mocha.run();></script>
+
+</body>
+
+
+let expect = require("chai").expect;
+function doSomething(x,y) {
+//   if (typeof x !== "string") throw new Error("x must be a string");
+//   return x + y;
+// }
+
+in the test index do 
+
+// describe("myFunctions", () => {
+//   describe("#doSomething", () => {
+//     it ("should concatenate", () => {
+//       let x = doSomething("Hello", 5);
+//       expect(x).to.equal("Hello5");
+//     });
+//     it ("should throw error if not string", () => {
+//       expect(() => {
+//         doSomething(5, 5);
+//       }).to.throw(Error);
+//     });
+//   });
+// });
+
+//  function getsum(a,b){
+return a+b;
+}
+
+describl('getsum',() => {
+it('should return the sum of the two inputs ,() =>{
+const sum= getsum(5,4);
+expect(sum).to.equal(9);
+})
+})
